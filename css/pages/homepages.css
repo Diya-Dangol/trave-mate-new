@@ -2,6 +2,13 @@
     position: relative;
 }
 
+#mainBanner .slide {
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
 .slideshow-container .mySlides{
     height: calc(100vh - 50px);
     background-size: cover;

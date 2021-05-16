@@ -5,7 +5,7 @@
         <link rel= "stylesheet" href="css/common/footer.css">
         <link rel= "stylesheet" href="css/common/global.css">
 
-        <link rel= "stylesheet" href="css/pages/homepage.css">
+        <link rel= "stylesheet" href="css/pages/homepages.css">
 
         <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
