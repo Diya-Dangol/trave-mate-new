@@ -1,0 +1,399 @@
+
+
+hr {
+    align-items: center;
+    background-color: rgb(255, 108, 48);
+    border: none;
+    display: block;
+    height: 3px;
+    width: 60px;
+}
+
+img {
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+/* header-banner-container */
+#header-banner{
+    background: rgb(0, 0, 0);
+}
+
+/* banner-title */
+#banner-title {
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
+    top: 40%;    
+    transform: translate(-50%, -70%);
+    -o-transform: translate(-50%, -70%);
+    -moz-transform: translate(-50%, -70%);
+    -webkit-transform: translate(-50%, -70%);
+}
+
+#banner-title h3{
+    text-align: center;
+}
+
+#banner-title hr{
+    left: 45%;
+    position:absolute;
+    top: 66%;    
+}
+
+/* search tour */
+.travel-search {
+    color: rgb(0,0,0);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    /* margin: 0 auto; */
+    position: absolute;
+    padding: 20px;
+    top: 70%;
+    transform: translateX(-50%);
+    width: 80%;
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+
+.form-group {
+    display: inline-block;
+    justify-content: center;   
+    height: 40px;
+    margin-left: 10px;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    color: #888;
+    display: block;
+    height: 34px;
+    /* line-height: 1.42857143; */
+    padding: 6px 12px;
+    font-size: 14px;
+    text-transform:capitalize;
+    width: 200px;
+}
+
+/* price range slider for travel search */
+.slidecontainer {
+    width: 100%;
+}
+
+/* slider  for sliding ranges in price/rate for travel search */
+.slider {
+    background: #d3d3d3;
+    height: 15px;
+    opacity: 0.7;
+    outline: none;
+    transition: opacity .2s;
+    width: 100%;
+    -moz-appearance: none;
+    -moz-transition: .2s;
+    -o-appearance: none;
+    -o-transition: .2s;
+    -webkit-appearance: none;
+    -webkit-transition: .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+/* button */
+.button {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 16px;
+    margin-left: 16px;
+    text-transform: capitalize;
+}
+
+.button i {
+    margin-left: 6px;
+}
+
+/* button bottom layer */
+.pushable {
+    background-color: rgb(224, 95, 36);
+    border: none;
+    border-radius: 12px;
+    box-shadow: -4px -4px 8px rgb(rgb(224, 95, 36));
+    cursor: pointer;
+    outline-offset: 4px;
+    padding: 0;
+}
+/* button top layer */
+.front {
+    background-color:rgb(255, 108, 48);
+    border: 1px rgb(235, 220, 214);
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgb(198, 195, 189);
+    color: white;
+    display: block;
+    padding: 12px 30px;
+    transform: translate(4px, 4px);
+    -moz-transform: translate(4px, 4px);
+    -o-transform: translate(4px, 4px);
+    -webkit-transform: translate(4px, 4px);
+    transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.pushable:hover .front {
+transform: translate(2px, 2px);
+transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.pushable:active .front {
+    box-shadow: none;
+    transform: translate(-1px, -1px);
+}
+
+/*  the dots/bullets/indicators */
+.dotted-slider{
+    text-align:center; 
+    transform: translate(0%, -400%);
+    width: 100%;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    background-color: rgb(228,217, 217);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+    width: 10px;
+}
+
+/* color change on hover on dot */
+.active, .dot:hover {
+    background-color: rgb(255, 108, 48);    
+}
+
+
+
+/*Price range Design CSS Starts*/
+
+
+section.range-slider {
+    float: left;
+    position: relative;
+    /* text-align: center; */ 
+    width: 100%;
+}
+section.range-slider input[type="range"] {
+    background: rgba(0,0,0,0.05);
+    border: none;
+    border-radius: 14px;
+    height: 20px;
+    left: 0;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: red;
+}
+section.range-slider input[type="range"]::-webkit-slider-thumb {
+    border: none;
+    border-radius: 14px;
+    height: 20px;
+    outline: 0;
+    pointer-events: all;
+    position: relative;
+    width: 20px;
+    -webkit-appearance: none;
+    z-index: 1;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dad8da), color-stop(100%, #413f41));
+    /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top, #dad8da 0, #413f41 100%);
+    /* older mobile safari and android > 2.2 */
+    background-image: linear-gradient(to bottom, #dad8da 0, #413f41 100%);
+    /* W3C */
+}
+section.range-slider input[type="range"]::-moz-range-thumb {
+    border: none;
+    border-radius: 14px;
+    height: 20px;
+    pointer-events: all;
+    position: relative;
+    width: 20px;
+    -moz-appearance: none;
+    z-index: 10;
+    background-image: linear-gradient(to bottom, #dad8da 0, #413f41 100%);
+    /* W3C */
+}
+section.range-slider input[type="range"]::-ms-thumb {
+    border-radius: 14px;
+    border: 0;
+    height: 20px;
+    pointer-events: all;
+    position: relative;
+    -ms-appearance: none;
+    width: 20px;
+    z-index: 10;
+    background-image: linear-gradient(to bottom, #dad8da 0, #413f41 100%);
+    /* W3C */
+}
+section.range-slider input[type=range]::-moz-range-track {
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+    position: relative;
+    z-index: -1;
+}
+section.range-slider input[type=range]:last-of-type::-moz-range-track {
+    background: none transparent;
+    border: 0;
+    -moz-appearance: none;
+}
+section.range-slider input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+/*Price range Design CSS ends*/
+
+.white {
+    color:rgb(255, 255, 255);
+}
+
+.center {
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    /* place-content: center; */
+}
+
+
+/* background  */
+.bg{
+    display: block;
+    height: auto;
+    margin-top: -20px;
+}
+/*  background color light */
+.light{
+    background: rgb(249, 249, 249);
+}
+
+/* .container{
+    margin: 0 auto;
+    padding: 100px 0;
+    place-content: center;
+    width: 1200px;
+} */
+
+.container .button{
+    margin-top: 50px;
+    /* place-content: center; */
+}
+
+.heading{
+    place-content: center;
+}
+
+.heading hr{
+    margin-top: 11px;
+}
+
+.heading p {
+    text-align: center;
+    margin-top: 11px;
+}
+
+.row {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat( auto-fit, 350px);
+    margin-top: 50px;
+    place-content: center;
+    width: 100%;
+}
+
+.column {
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background: rgb(0, 0, 0);
+    border-radius: 7px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card i{ 
+    border-radius: 20px;
+    background-color: rgb(255, 108, 48);
+    height: 20px;
+    width: 20px; 
+    opacity: 0;
+    padding: 10px;        
+    place-content: center;
+    position: absolute;
+    transform: translate(-200px, 0px);
+}
+
+.card p{
+    color:rgb(255, 255, 255);
+    font-weight:450;
+    position: absolute;
+    text-shadow:1px 1px rgba(0, 0, 0, 0.411);
+    transform: translate(40px, -60px);
+}
+
+.card:hover {
+    background:linear-gradient(rgba(255, 107, 48, 0.623), rgb(0,0,0));
+}
+
+.card:hover i {
+    animation-direction: normal;
+    animation-duration: 0.5s;
+    animation-name: visibility;
+    opacity:1;
+    place-content: center;
+    transform: translate(-200px, 80px);
+}
+
+.card span{
+    font-weight: normal;
+    margin-left: 15px;
+}
+
+
+
+/* header banner slide show */
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes visibility{
+    from {transform: translate(-200px, 0px); opacity: 0.3}
+    to {transform: translate(-200px, 80px); opacity: 1}
+}
+    
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next {font-size: 11px}
+}

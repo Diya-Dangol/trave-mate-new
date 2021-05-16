@@ -1,0 +1,129 @@
+header{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+.logo{
+    float: left;
+    width: 20%;
+}
+
+.travel-mate sup{
+    display: block;
+    /* font-size: 30px; */
+}
+
+#M {
+    background-color: rgb(255, 108, 48);
+    font-family: "Script MT", cursive;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 4px;
+    text-transform: capitalize;
+}
+
+sup{
+    font-size:12px;
+    color: rgb(255, 108, 48);
+    margin-bottom:10px;
+}
+
+.navigation{
+    float: right;
+    text-align: right;
+    width: 80%;
+}
+
+.navigation ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navigation li a{
+    display: block;
+    line-height: 39px;
+} 
+
+/* dropdown content in navigation */
+.menu {
+    position: relative;
+    z-index: 3;
+}
+
+.dropdown {
+    background-color: rgb(0,0,0);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    min-width: 250px;
+    padding: 10px 2px;
+    position: absolute;
+    right: 0;
+    top: 38px;
+}
+
+.dropdown li, .dropdown-destination li{
+    width: 100%;
+    text-align: left;              
+}
+.dropdown li a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+.dropdown-destination {
+    display: none;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    position: absolute;
+    right:0;
+    background-color: rgb(0,0,0);
+    min-width: 800px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 2px;
+    top: 38px;
+    opacity: 0;
+}
+
+.navigation li:hover .dropdown-destination {
+    display:grid;
+    opacity: 1;
+}
+
+.navigation a:hover{
+    color: rgb(255, 108, 48);
+}
+
+.navigation li:hover .dropdown {
+    display: block;
+}
+.navigation li:hover .dropdown li:after{
+    display: none !important;
+}
+
+.navigation li :after , .navigation li:hover .dropdown-destination :after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 108, 48);
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    opacity: 0;
+}
+
+.dropdown a:hover, .dropdown-destination a:hover{
+    text-decoration: underline;
+}
+
+.navigation li:hover :after {
+    opacity: 1;
+}
+.menu .dropdown :after{
+    display: none !important;
+}
+.menu:hover .dropdown:after, .menu:hover .dropdown-destination:after{
+    display: none !important;
+}

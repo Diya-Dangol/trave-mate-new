@@ -1,0 +1,133 @@
+html, body {
+    width: 100%;
+}
+
+body{
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background: rgb(241, 241, 241);
+    margin: 0;
+    padding: 0;
+}
+
+ul li, ol li{
+    list-style: none;
+}
+
+h1, h2, h3{
+    color: rgb(21, 21, 21);
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+h2{
+    color: rgb(68, 68, 68);
+    font-size: 32px;
+}
+
+h3{
+    color: rgb(68, 68, 68);
+}
+
+p, text, label{
+    font-family: "Open-Sans", sans-serif;
+}
+
+p, label{
+    color: rgb(75, 75, 75);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+text, label{
+    text-transform: capitalize;
+}
+
+text{
+    color: rgb(151, 151, 151);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.text-white{
+    color: rgb(255, 255, 255);
+}  
+
+.text-center{
+    text-align: center;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+i{
+    color: rgb(255, 255, 255);
+}
+
+section, aside, modal{
+    margin: 0;
+    padding: 0;
+}
+
+/* dropdown triangular icon */
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.clear{
+clear: both;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sectionHeader label{
+    text-align: center;
+    display: block;
+}
+
+.btn{
+    background: none;
+    border:rgb(0, 0, 255);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 10px 5px;
+}
+
+.btn:hover{
+    background: rgb(194, 66, 16);
+}
+
+.heading h1:after, .heading h2:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 108, 48);
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    opacity: 0;
+}
