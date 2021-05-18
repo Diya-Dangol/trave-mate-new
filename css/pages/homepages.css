@@ -3,12 +3,23 @@
 }
 
 #mainBanner .slide {
+<<<<<<< HEAD
     background-position: center;
     background-size: cover;
 }
 
 .BannerSlider .slide{
     height: calc(100vh - 100px);
+=======
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.slideshow-container .mySlides{
+    height: calc(100vh - 50px);
+>>>>>>> e236e20a7cf0f0160fd0f496bd54b50ec45710ac
     background-size: cover;
     background-position: center;
 }
