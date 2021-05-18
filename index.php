@@ -4,28 +4,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- header banner with slide show images -->
-    <!-- <section id="mainBanner">
-        <div class="slideshow-container">
-
-            <div class="mySlides fade" style="background-image: url(assets/sanjay-hona.jpg)">
+    <section id="mainBanner">
+        <div class="BannerSlider">
+            <div class="slide fade" style="background-image: url(assets/sanjay-hona.jpg)">
             </div>
-            <div class="mySlides fade" style="background-image: url(assets/beijing.jpg)">
+            <div class="slide fade" style="background-image: url(assets/beijing.jpg)">
             </div>
-            <div class="mySlides fade" style="background-image: url(assets/leonard.jpg)">
+            <div class="slide fade" style="background-image: url(assets/leonard.jpg)">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>           
-        </div>
-        <div class="heading">
-            <h1 class="text-white">never stop exploring</h1>
-            <h3 class="text-white text-center">grab your bag packs and enjoy holidays</h3>
-        </div>
+        </div>    
 
-        <div class="searchBar center">
+        <div class="searchBar ">
             <div class="container">
+                <div class="mainHeader">
+                    <h1 class="text-white ">never stop exploring</h1>
+                    <label class="text-white ">grab your bag packs and enjoy holidays</label>
+                </div>
                 <div class="SearchContainer">
-                    <form action="/nepal.php">
+                    <form action="/nepal.php"  class="center">
                         <div class="form-group">
                             <h3>want to travel with us?</h3>
                         </div>
@@ -66,548 +65,485 @@
                         </div>
 
                         <div class="form-group">
-                            <button class="button pushable">
-                                <span class="front ">
-                                    <a href="nepal.php"> search <i class="fa fa-search"></i></a>
-                                </span>
-                            </button>
-                        </div>
-                        
+                            <a href="nepal.php" class="btn"> search <i class="fa fa-search"></i></a>
+                        </div>              
                     </form>
                 </div>
+                <div class="dotted-slider">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>   
             </div>
         </div>
 
-        <div class="dotted-slider">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>         
-    </section> -->
-
-    <section id="mainBanner">
-       <div class="slider">
-           <div class="slide" style="background-image: url(assets/sanjay-hona.jpg)">
-           </div>
-       </div>
-       <div class="searchBar">
-           <div class="container">
-               <div class="SearchContainer">
-                   <h2>Want to Travel with Us?</h2>
-               </div>
-           </div>
-       </div>
-   </section>
+              
+    </section>
     
     <!-- popular destination container -->
-    <div class = "bg light">
+    <section id="popularDestination">
         <div class="container">
-            <div class="heading">
-                <h2>popular destinations
-                    <hr>
-                    <p>choose your next destinations</p>
-                </h2>
+            <div class="sectionHeader">
+                <h2>Popular Destinations</h2>
+                <label>Choose Your Next Destination</label>
             </div>
-            
-            <section class="row">
-                <article class="column">
-                    <article class="card"> 
-                        <img src="assets/kathmandu.jpg" alt=""  width="350px" height="450px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>nepal 
-                        <span>05 palces</span>
-                        </p>
-                    </article>
-                </article>
-
-                <article class="column">
-                    <article class="card">
-                        <img src="assets/japan.jpg" alt=""  width="350px" height="450px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>
-                            japan 
-                            <span>05 palces</span>
-                        </p>
-                    </article>
-                </article>
+            <div class="listLayout">
+                <div class="list" style="background-image: url(assets/kathmandu.jpg)">
+                    <div class="dark">
+                        <i class="fa fa-binoculars"></i>   
+                        <h5>Nepal <span>05 Places</span></h5>
+                    </div>
+                </div>
+                <div class="list" style="background-image: url(assets/japan.jpg)">
+                    <div class="dark">
+                        <i class="fa fa-binoculars"></i>   
+                        <h5>japan <span>05 Places</span></h5>
+                    </div>
+                </div>
+                <div class="list" style="background-image: url(assets/beijing.jpg)">
+                    <div class="dark">
+                        <i class="fa fa-binoculars"></i>   
+                        <h5>china <span>05 Places</span></h5>
+                    </div>
+                </div>
+                <div class="list big" style="background-image: url(assets/leonard.jpg)">
+                    <div class="dark">
+                        <i class="fa fa-binoculars"></i>   
+                        <h5>paris <span>05 Places</span></h5>
+                    </div>
+                </div>
+                <div class="list" style="background-image: url(assets/beijing.jpg)">
+                    <div class="dark">
+                        <i class="fa fa-binoculars"></i>   
+                        <h5>china <span>05 Places</span></h5>
+                    </div>
+                </div>
+                <div class="list" style="background-image: url(assets/kathmandu.jpg)">
+                    <div class="dark">
+                        <i class="fa fa-binoculars"></i>   
+                        <h5>japan <span>05 Places</span></h5>
+                    </div>
+                </div>
+                <div class="list" style="background-image: url(assets/japan.jpg)">
+                    <div class="dark">
+                        <i class="fa fa-binoculars"></i>   
+                        <h5>japan <span>05 Places</span></h5>
+                    </div>
+                </div>
+                <div class="list" style="background-image: url(assets/beijing.jpg)">
+                    <div class="dark">
+                        <i class="fa fa-binoculars"></i>   
+                        <h5>japan <span>05 Places</span></h5>
+                    </div>
+                </div>
                 
-                <article class="column">
-                    <article class="card">
-                        <img src="assets/beijing.jpg" alt=""  width="350px" height="450px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>
-                            beijing
-                            <span>05 palces</span>
-                        </p>
-                    </article>
-                </article>
-                
-                <article class="column">
-                    <article class="card">
-                        <img src="assets/leonard.jpg" alt=""  width="350px" height="450px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>
-                            paris 
-                            <span>05 palces</span>
-                        </p>
-                    </article>
-                </article>
-                <article class="column">
-                    <article class="card">
-                        <img src="assets/bhaktapur.jpg" alt=""  width="350px" height="450px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>
-                            nepal 
-                            <span>05 palces</span>
-                        </p>
-                    </article>
-                </article>
-                <article class="column">
-                    <article class="card">
-                        <img src="assets/bhutan.jpg" alt=""  width="350px" height="450px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>
-                            bhutan 
-                            <span>05 palces</span>
-                        </p>
-                    </article>
-                </article>                  
-            </section>        
-            <button class="button center pushable">
-                <span class="front">
-                    <a href="trip-list.php" id="front" >more places <i class='fa fa-arrow-right'></i> </a>
-                </span>
-            </button>
+                <div class="clear"></div>
+            </div>
+            <span class="button">
+                <a href="nepal.php" class="btn">More Destination  <i class="fa fa-arrow-right"></i></a>
+            </span>
         </div>
-    </div>
+    </section>
 
     <!-- banner image with button view all packages -->
-    <div class="banner">
-        <img src="assets/nepal.jpg" style="width:100%; height: 300px;">
-        <div class="heading">
-            <h2 class="title">your next destination
-                <hr>
-            </h2>
-
-            <button class="button pushable">
-                <span class="front">
-                     <a href="trip-list.php" id="front" >all packages<i class='fa fa-arrow-right'></i> </a>
+    <section class="banner">
+        <div class="sectionBanner" style="background-image: url(assets/nepal.jpg)">
+        <div class="dark">
+            <div class="container">
+                <h2>choose your next destination</h2>
+                <span class="button">
+                    <a href="trip-detail.php" class="btn">view all packages <i class="fa fa-arrow-right"></i></a>
                 </span>
-            </button>
-
+                <div class="clear"></div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- popular packages container -->
-    <div class= "bg grey">
+    <section id= "popularPackages">
         <div class = "container">
-            <div class="heading">
-                <h2>popular packages
-                    <hr>
-                    <p>choose your next package</p>
-                </h2>
+            <div class="sectionHeader">
+                <h2>popular packages</h2>
+                <label>choose your next package</label>
             </div>
             <section class="row">
-
                 <article class="column">
-                    <article class="card"> 
-                        <img src="assets/kathmandu.jpg" alt=""  width="350px" height="180px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>
-                            2 reviews
-                            <span class="star">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </span>
-                        </p>
-                    </article>
+                    <div class="card" style="background-image: url(assets/kathmandu.jpg)">  
+                        <div class="dark">
+                            <i class="fa fa-binoculars"></i>
+                            <h5>
+                                2 reviews
+                                <span class="star">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </span>
+                            </h5>
+                        </div>
+                    </div>                     
                     <article class="content">
                         <h3>kathmandu</h3>
                         <text>nepal</text>
                         <p>
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
                         </p>
                         <article class="icon">
                             <div id="icon-text">
                                 <i class="fa fa-clock-o"></i>
-                                <br/>
                                 <text>3 days</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-calendar"></i>
-                                <br/>
                                 <text>12 Jan - 16 Jan</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-plane"></i>
-                                <br/>
                                 <text>Nepal</text>
                             </div>                    
                             <div id="icon-text">
                                 <i class="fa fa-compass"></i>
-                                <br/>
                                 <text>Adventurous</text>
                             </div>
                         </article>
-                        <article class="button-wrap">
-                            <p id="price">Rs.8000 <span class="per-person">/per person</span> </p>
-                            <button class="button pushable">
-                                <span class="front">
-                                    <a href="nepal.php">Book now</a>
+                        <hr>
+                        <article class="float-content">
+                            <h4 id="price">
+                                Rs.8000
+                                <span>
+                                    /per person
                                 </span>
-                            </button>
+                            </h4>      
+                           <span><a href="" class="btn">book now</a></span>
                         </article>
+                        <div class="clear"></div>
                     </article> 
-                </article>
-
+                </article>        
                 <article class="column">
-                    <article class="card">
-                        <img src="assets/bhutan.jpg" alt=""  width="350px" height="180px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>
-                            2 reviews
-                            <span class="star">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </span>
-                        </p>
-                    </article>
+                    <div class="card" style="background-image: url(assets/kathmandu.jpg)">  
+                        <div class="dark">
+                            <i class="fa fa-binoculars"></i>
+                            <h5>
+                                2 reviews
+                                <span class="star">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </span>
+                            </h5>
+                        </div>
+                    </div>                     
                     <article class="content">
-                        <h3>tiger nest monastary</h3>
-                        <text>bhutan</text>
+                        <h3>kathmandu</h3>
+                        <text>nepal</text>
                         <p>
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
                         </p>
                         <article class="icon">
                             <div id="icon-text">
                                 <i class="fa fa-clock-o"></i>
-                                <br/>
                                 <text>3 days</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-calendar"></i>
-                                <br/>
                                 <text>12 Jan - 16 Jan</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-plane"></i>
-                                <br/>
                                 <text>Nepal</text>
                             </div>                    
                             <div id="icon-text">
                                 <i class="fa fa-compass"></i>
-                                <br/>
                                 <text>Adventurous</text>
                             </div>
                         </article>
-                        <article class="button-wrap">
-                            <p id="price">Rs.8000 <span class="per-person">/per person</span> </p>
-                            <button class="button pushable">
-                                <span class="front">
-                                    <a href="nepal.php">Book now</a>
+                        <hr>
+                        <article class="float-content">
+                            <h4 id="price">
+                                Rs.8000
+                                <span>
+                                    /per person
                                 </span>
-                            </button>
+                            </h4>      
+                           <span><a href="" class="btn">book now</a></span>
                         </article>
+                        <div class="clear"></div>
                     </article> 
-                </article>
-                
+                </article>        
                 <article class="column">
-                    <article class="card">
-                        <img src="assets/beijing.jpg" alt=""  width="350px" height="180px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>
-                            2 reviews
-                            <span class="star">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </span>
-                        </p>
-                    </article>
+                    <div class="card" style="background-image: url(assets/kathmandu.jpg)">  
+                        <div class="dark">
+                            <i class="fa fa-binoculars"></i>
+                            <h5>
+                                2 reviews
+                                <span class="star">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </span>
+                            </h5>
+                        </div>
+                    </div>                     
                     <article class="content">
-                        <h3>palace of heaven</h3>
-                        <text>China</text>
+                        <h3>kathmandu</h3>
+                        <text>nepal</text>
                         <p>
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
                         </p>
                         <article class="icon">
                             <div id="icon-text">
                                 <i class="fa fa-clock-o"></i>
-                                <br/>
                                 <text>3 days</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-calendar"></i>
-                                <br/>
                                 <text>12 Jan - 16 Jan</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-plane"></i>
-                                <br/>
                                 <text>Nepal</text>
                             </div>                    
                             <div id="icon-text">
                                 <i class="fa fa-compass"></i>
-                                <br/>
                                 <text>Adventurous</text>
                             </div>
                         </article>
-                        <article class="button-wrap">
-                            <p id="price">Rs.8000 <span class="per-person">/per person</span> </p>
-                            <button class="button pushable">
-                                <span class="front">
-                                    <a href="nepal.php">Book now</a>
+                        <hr>
+                        <article class="float-content">
+                            <h4 id="price">
+                                Rs.8000
+                                <span>
+                                    /per person
                                 </span>
-                            </button>
+                            </h4>      
+                           <span><a href="" class="btn">book now</a></span>
                         </article>
+                        <div class="clear"></div>
                     </article> 
-                </article>  
-
+                </article>        
                 <article class="column">
-                    <article class="card">
-                        <img src="assets/japan.jpg" alt=""  width="350px" height="180px">
-                        <i class="fa fa-binoculars"></i>
-                        <p>
-                            2 reviews
-                            <span class="star">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </span>
-                        </p>
-                    </article>
+                    <div class="card" style="background-image: url(assets/kathmandu.jpg)">  
+                        <div class="dark">
+                            <i class="fa fa-binoculars"></i>
+                            <h5>
+                                2 reviews
+                                <span class="star">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </span>
+                            </h5>
+                        </div>
+                    </div>                     
                     <article class="content">
-                        <h3>title goes here</h3>
-                        <text>japan</text>
+                        <h3>kathmandu</h3>
+                        <text>nepal</text>
                         <p>
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
                         </p>
                         <article class="icon">
                             <div id="icon-text">
                                 <i class="fa fa-clock-o"></i>
-                                <br/>
                                 <text>3 days</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-calendar"></i>
-                                <br/>
                                 <text>12 Jan - 16 Jan</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-plane"></i>
-                                <br/>
                                 <text>Nepal</text>
                             </div>                    
                             <div id="icon-text">
                                 <i class="fa fa-compass"></i>
-                                <br/>
                                 <text>Adventurous</text>
                             </div>
                         </article>
-                        <article class="button-wrap">
-                            <p id="price">Rs.8000 <span class="per-person">/per person</span> </p>
-                            <button class="button pushable">
-                                <span class="front">
-                                    <a href="nepal.php">Book now</a>
+                        <hr>
+                        <article class="float-content">
+                            <h4 id="price">
+                                Rs.8000
+                                <span>
+                                    /per person
                                 </span>
-                            </button>
+                            </h4>      
+                           <span><a href="" class="btn">book now</a></span>
                         </article>
+                        <div class="clear"></div>
                     </article> 
-                </article>   
-
+                </article>        
                 <article class="column">
-                    <article class="card">
-                        <img src="assets/snow.jpg" alt=""  width="350px" height="180px">
-                        <i class="fa fa-binoculars"></i>
+                    <div class="card" style="background-image: url(assets/kathmandu.jpg)">  
+                        <div class="dark">
+                            <i class="fa fa-binoculars"></i>
+                            <h5>
+                                2 reviews
+                                <span class="star">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </span>
+                            </h5>
+                        </div>
+                    </div>                     
+                        <article class="content">
+                        <h3>kathmandu</h3>
+                        <text>nepal</text>
                         <p>
-                            2 reviews
-                            <span class="star">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </span>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
                         </p>
-                    </article>
-                    <article class="content">
-                        <h3>snow house</h3>
-                        <text>europe</text>
-                        <p>
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
-                        </p>
-
                         <article class="icon">
                             <div id="icon-text">
                                 <i class="fa fa-clock-o"></i>
-                                <br/>
                                 <text>3 days</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-calendar"></i>
-                                <br/>
                                 <text>12 Jan - 16 Jan</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-plane"></i>
-                                <br/>
                                 <text>Nepal</text>
                             </div>                    
                             <div id="icon-text">
                                 <i class="fa fa-compass"></i>
-                                <br/>
                                 <text>Adventurous</text>
                             </div>
                         </article>
-                        <article class="button-wrap">
-                            <p id="price">Rs.8000 <span class="per-person">/per person</span> </p>
-                            <button class="button pushable">
-                                <span class="front">
-                                    <a href="nepal.php">Book now</a>
+                        <hr>
+                        <article class="float-content">
+                            <h4 id="price">
+                                Rs.8000
+                                <span>
+                                    /per person
                                 </span>
-                            </button>
+                            </h4>      
+                           <span><a href="" class="btn">book now</a></span>
                         </article>
+                        <div class="clear"></div>
                     </article> 
-                </article>     
-
+                </article>        
                 <article class="column">
-                    <article class="card">
-                        <img src="assets/polynesia.jpg" alt=""  width="350px" height="180px">
-                        <i class="fa fa-binoculars"></i>
+                    <div class="card" style="background-image: url(assets/kathmandu.jpg)">  
+                        <div class="dark">
+                            <i class="fa fa-binoculars"></i>
+                            <h5>
+                                2 reviews
+                                <span class="star">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </span>
+                            </h5>
+                        </div>
+                    </div>                     
+                        <article class="content">
+                        <h3>kathmandu</h3>
+                        <text>nepal</text>
                         <p>
-                            2 reviews
-                            <span class="star">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </span>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
                         </p>
-                    </article>
-                    <article class="content">
-                        <h3>polynesia</h3>
-                        <text>france</text>
-                        <p>
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci...
-                        </p>
-
                         <article class="icon">
                             <div id="icon-text">
                                 <i class="fa fa-clock-o"></i>
-                                <br/>
                                 <text>3 days</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-calendar"></i>
-                                <br/>
                                 <text>12 Jan - 16 Jan</text>
                             </div>
                             <div id="icon-text">
                                 <i class="fa fa-plane"></i>
-                                <br/>
                                 <text>Nepal</text>
                             </div>                    
                             <div id="icon-text">
                                 <i class="fa fa-compass"></i>
-                                <br/>
                                 <text>Adventurous</text>
                             </div>
                         </article>
-                        <article class="button-wrap">
-                            <p id="price">Rs.8000 <span class="per-person">/per person</span> </p>
-                            <button class="button pushable">
-                                <span class="front">
-                                    <a href="nepal.php">Book now</a>
+                        <hr>
+                        <article class="float-content">
+                            <h4 id="price">
+                                Rs.8000
+                                <span>
+                                    /per person
                                 </span>
-                            </button>
+                            </h4>      
+                           <span><a href="" class="btn">book now</a></span>
                         </article>
+                        <div class="clear"></div>
                     </article> 
-                </article>            
+                </article>        
             </section> 
 
-            <button class="button pushable">
-                <span class="front">
-                    <a href="trip-list.php" id="front" >more places <i class='fa fa-arrow-right'></i> </a>
-                </span>
-            </button>
+            <span class="button"><a href="" class="btn">more places <i class="fa fa-search"></i></a></span>
         </div>
-    </div>
+    </section>
 
     <!-- card banner -->
-    <div class="banner-card">
-        <img src="assets/vacations.jpg" width="100%" height="350px">
-        <div class="heading">
-            <h2 class="title">
-                we accept
-                <hr>
-            </h2>
-        </div>
-        <article class="icon">
-            <i class="fa fa-cc-visa"></i>
-            <i class="fa fa-cc-mastercard"></i>
-            <i class="fa fa-cc-paypal"></i>
-            <i class="fa fa-credit-card"></i>
-            <i class="fa fa-cc-discover"></i>
-        </article>
-    </div>
-
-    <!-- about us -->
-    <div class="bg light">
-        <div class = "container">
-            <div class="heading">
-                <h2>about us
-                    <hr>
-                    <p>lets introduce ourselves</p>
+    <section class="banner">
+        <div class="dark" style="background-image: url(assets/vacations.jpg)">
+        <div class="container">
+            <div class="sectionHeader">
+                <h2>
+                    we accept
                 </h2>
             </div>
+            <div class="bannerIcon">
+                <i class="fa fa-cc-visa"></i>
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-cc-paypal"></i>
+                <i class="fa fa-credit-card"></i>
+                <i class="fa fa-cc-discover"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us -->
+    <section id="aboutUs">
+        <div class = "container">
+            <div class="sectionHeader">
+                <h2>About us</h2>
+                <label>let's introduce ourselves</label>
+            </div>
             <!--  our story  -->
-            <div class="container-about">       
-                <div class="sub-heading">
+            <div class="sectionAbout">       
+                <div class="subHeader">
                     <h3>our story
-                        <hr>
                     </h3>
                 </div>
-                <article class="story">
-                    <img src="assets/kathmandu.jpg" alt=""  width="500px" height="370px">
-                    <article class="content">
-                        <article class="paragraph">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p>
-                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum 
-                            </p>
-                        </article>
-                        <article class="button-wrap">
-                            <button class="button pushable">
-                                <span class="front">
-                                    <a href="about.php">read more <i class="fa fa-arrow-right"></i></a>
-                                </span>
-                            </button>
-                        </article>
-                    </article> 
-                </article>
+                <div class="column story">
+                    <div class="picture" style="background-image: url(assets/kathmandu.jpg)">
+                    </div>
+                    <div class="content paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum 
+                        </p>
+                        <span><a href="" class="btn">Read more <i class="fa fa-arrow right"></i></a></span>
+                    </div>
+                </div>
             </div>
             <!--  our services  -->
-            <div class="container-about">       
-                <div class="sub-heading">
-                    <h3>our services
-                        <hr>
-                    </h3>
+            <div class="sectionAbout">       
+                <div class="subHeader">
+                    <h3>our services</h3>
                 </div>
                 <article class= "row">
                     <article class="column">
@@ -653,35 +589,33 @@
                 </article>
             </div>
             <!-- our partner -->
-            <div class="container-about">       
-                <div class="sub-heading">
-                    <h3>our partner
-                        <hr>
-                    </h3>
+            <div class="sectionAbout">       
+                <div class="subHeader">
+                    <h3>our partner</h3>
                 </div>
-                <article class= "partner-row">
+                <article class= "row partner">
                     <article class="column">
                         <article class="content">
-                            <img src="assets/drop.png" height="60px" width="60px" >
-                            <p>hotel accomodation</p>
+                            <div class="image" style="background-image: url(assets/drop.png)"></div>
+                            <h5>hotel accomodation</h5>
                         </article> 
                     </article>
                     <article class="column">
                         <article class="content">
-                            <img src="assets/drop.png" height="60px" width="60px" >
-                            <p>hotel accomodation</p>
+                            <div class="image" style="background-image: url(assets/drop.png)"></div>
+                            <h5>hotel accomodation</h5>
                         </article> 
                     </article>
                     <article class="column">
                         <article class="content">
-                            <img src="assets/drop.png" height="60px" width="60px" >
-                            <p>hotel accomodation</p>
+                            <div class="image" style="background-image: url(assets/drop.png)"></div>
+                            <h5>hotel accomodation</h5>
                         </article> 
                     </article>
                     <article class="column">
                         <article class="content">
-                            <img src="assets/drop.png" height="60px" width="60px" >
-                            <p>hotel accomodation</p>
+                            <div class="image" style="background-image: url(assets/drop.png)"></div>
+                            <h5>hotel accomodation</h5>
                         </article> 
                     </article>
                 
@@ -690,50 +624,51 @@
                 </article>
             </div>
         </div>
-    </div>
+    </section>
     
 
     <!-- subscribe banner -->
-    <div class="banner-subscribe">
-        <img src="assets/sunset.jpg" style="width:100%; height: 350px;">
-        <div class="subscribe-content">
-            <h2 class="title">
-                subscribe our newsletter
-                <hr>
-                <p id="subtitle">Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla</p>
-            </h2>
-            <form action="contact.php">
-                <div class="form-group">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="email">
+    <section class="banner">
+        <div style="background-image: url(assets/sunset.jpg)">
+            <div class="dark">
+                <div class="container subscribe">
+                    <div class="sectionHeader">
+                        <h2>
+                            subscribe our newsletter
+                        </h2>
+                        <label>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla</label>
+                    </div>
+                    <!-- <div class="clear"></div> -->
+                    <form action="contact.php">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="email">
+                        </div>
+                        <div class="form-group">
+                            <a href="" class="btn">subscribe</a>
+                        </div>
+                    </form>
+                    <!-- <div class="clear"></div> -->
                 </div>
-
-                <button class="button pushable">
-                    <span class="front">
-                        <a href="trip-list.php" id="front" >subscribe <i class='fa fa-subscribe'></i> </a>
-                    </span>
-                </button>
-            </form>
+                <div class="clear"></div>
+            </div>
         </div>
     </div>
    
     <!-- testimonials-->
-    <div class="bg grey">
-        <div class = "container">
-            <div class="heading">
-                <h2>testimonial
-                    <hr>
-                    <p>views from our excited travellers</p>
-                </h2>
+    <section id="testimonials">
+        <div class="container">
+            <div class="sectionHeader">
+                <h2>testimonial</h2>
+                <label>views from our excited travellers</label>
             </div>
-            <div class="testimonial">
-                <article class= "row">
-                    <article class="column">
-                        <img src="assets/beijing.jpg" width="100px" height="100px">
-                        <article class="content">
-                            <div class="sub-heading">
-                                <h3>john smilga</h3>
-                                <text>nepal</text>
-                            </div>
+            
+            <section class= "row testimonial">
+                <div class="column">
+                    <div class="card image" style="background-image: url(assets/beijing.jpg)"></div>
+                    <article class="content">
+                        <div class="excerpts">
+                            <h3>john smilga</h3>
+                            <text>nepal</text>
                             <span class="star">
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -741,20 +676,20 @@
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </span>
-                            <p>
-                                <i id="left-quote" class="fa fa-quote-left"></i>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                <i id="right-quote" class="fa fa-quote-right"></i>
-                            </p>
-                        </article>
+                        </div>
+                        <p>
+                            <i id="left-quote" class="fa fa-quote-left"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <i id="right-quote" class="fa fa-quote-right"></i>
+                        </p>
                     </article>
-                    <article class="column">
-                        <img src="assets/beijing.jpg" width="100px" height="100px">
-                        <article class="content">
-                            <div class="sub-heading">
-                                <h3>john smilga</h3>
-                                <text>nepal</text>
-                            </div>
+                </div>
+                <div class="column">
+                    <div class="card" style="background-image: url(assets/beijing.jpg)"></div>
+                    <article class="content">
+                        <div class="excerpts">
+                            <h3>john smilga</h3>
+                            <text>nepal</text>
                             <span class="star">
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -762,20 +697,20 @@
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </span>
-                            <p>
-                                <i id="left-quote" class="fa fa-quote-left"></i>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                <i id="right-quote" class="fa fa-quote-right"></i>
-                            </p>
-                        </article>
+                        </div>
+                        <p>
+                            <i id="left-quote" class="fa fa-quote-left"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <i id="right-quote" class="fa fa-quote-right"></i>
+                        </p>
                     </article>
-                    <article class="column">
-                        <img src="assets/beijing.jpg" width="100px" height="100px">
-                        <article class="content">
-                            <div class="sub-heading">
-                                <h3>john smilga</h3>
-                                <text>nepal</text>
-                            </div>
+                </div>
+                <div class="column">
+                    <div class="card" style="background-image: url(assets/beijing.jpg)"></div>
+                    <article class="content">
+                         <div class="excerpts">
+                            <h3>john smilga</h3>
+                            <text>nepal</text>
                             <span class="star">
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -783,79 +718,72 @@
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </span>
-                            <p>
-                                <i id="left-quote" class="fa fa-quote-left"></i>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                <i id="right-quote" class="fa fa-quote-right"></i>
-                            </p>
-                        </article>
-                    </article>                
-                </article>
-            </div>
+                        </div>
+                        <p>
+                            <i id="left-quote" class="fa fa-quote-left"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <i id="right-quote" class="fa fa-quote-right"></i>
+                        </p>
+                    </article>
+                </div>
+                              
+            </section>
         </div>
-    </div>
+    </section>
     
     <!-- blog-->
-    <div class = "bg light">
-        <div class="heading">
-            <h2>our blog
-                <hr>
-                <p>see our exciting blog</p>
-            </h2>
+    <section id = "blog">
+        <div class="sectionHeader">
+            <h2>our blog</h2>
+            <label>see our exciting blog</label>
         </div>
 
         <!-- blog content -->
         <article class= "row">
             <article class="column">
-                <div class="content-blog">       
-                    <img src="assets/monkey.jpg" height="250px" width="300px">
-                    <article class="content">
+                <div class="card blog" style="background-image: url(assets/monkey.jpg)">
+                </div>    
+                <article class="content">
                         <h3>showering in the ocean</h3>
-                        <article class="icon">
-                            <text>by john smillga at 9 july 2021</text>
-                        </article>
+                        <text>by john smillga at 9 july 2021</text>
+                        <hr>
                         <text>in blog diary, travel</text>
                         <text class="comment">0 comment</text>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#">read more <i class="fa fa-arrow-right"></i></a>
                         </p> 
-                    </article> 
-                </div>
+                </article> 
             </article>
             <article class="column">
-                <div class="content-blog">       
-                    <img src="assets/monkey.jpg" height="250px" width="300px">
-                    <article class="content">
+                <div class="card blog" style="background-image: url(assets/monkey.jpg)">
+                </div>    
+                <article class="content">
                         <h3>showering in the ocean</h3>
-                        <article class="icon">
-                            <text>by john smillga at 9 july 2021</text>
-                        </article>
+                        <text>by john smillga at 9 july 2021</text>
+                        <hr>
                         <text>in blog diary, travel</text>
                         <text class="comment">0 comment</text>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#">read more <i class="fa fa-arrow-right"></i></a>
                         </p> 
-                    </article> 
-                </div>
+                </article> 
             </article>
             <article class="column">
-                <div class="content-blog">       
-                    <img src="assets/monkey.jpg" height="250px" width="300px">
-                    <article class="content">
+                <div class="card blog" style="background-image: url(assets/monkey.jpg)">
+                </div>    
+                <article class="content">
                         <h3>showering in the ocean</h3>
-                        <article class="icon">
-                            <text>by john smillga at 9 july 2021</text>
-                        </article>
+                        <text>by john smillga at 9 july 2021</text>
+                        <hr>
                         <text>in blog diary, travel</text>
                         <text class="comment">0 comment</text>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#">read more <i class="fa fa-arrow-right"></i></a>
                         </p> 
-                    </article> 
-                </div>
+                </article> 
             </article>
         </article>       
-    </div>
+    </section>
 
     
     
@@ -873,7 +801,7 @@
         
         function showSlides(n) {
             var i;
-            var slides = document.getElementsByClassName("mySlides");
+            var slides = document.getElementsByClassName("slide");
             var dots = document.getElementsByClassName("dot");
             if (n > slides.length) {slideIndex = 1}    
             if (n < 1) {slideIndex = slides.length}

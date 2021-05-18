@@ -2,8 +2,13 @@
     position: relative;
 }
 
-.slideshow-container .mySlides{
-    height: calc(100vh - 50px);
+#mainBanner .slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.BannerSlider .slide{
+    height: calc(100vh - 100px);
     background-size: cover;
     background-position: center;
 }
@@ -27,11 +32,11 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
+    margin-top: -100px;
     padding: 16px;
     position: absolute;
     top: 50%;
     transition: 0.6s ease;
-    margin-top: -22px;
     user-select: none;
     width: auto;
   }
@@ -52,16 +57,16 @@
 }
 
 
-.heading{
-    bottom: 50px;
+.searchBar .mainHeader{
+    bottom: 100px;    
+    position: relative;
 }
 
-
+/*  */
 .searchBar{
     position: absolute;
-    bottom: 50px;
-    left: 10%;
-    width: 80%;
+    bottom: 80px;
+    width: 100%;
 }
 
 .SearchContainer{
@@ -69,24 +74,497 @@
     padding: 20px;
 }
 
+.form-group {
+    display: inline-block;
+    left: 20px;
+    place-content: center;   
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    color: #888;
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-transform:capitalize;
+    width: 160px;
+}
 
 
+/* slider  for sliding ranges in price/rate for travel search */
+.slider {
+    background: #d3d3d3;
+    height: 15px;
+    opacity: 0.7;
+    outline: none;
+    transition: opacity .2s;
+    width: 100%;
+    -moz-appearance: none;
+    -moz-transition: .2s;
+    -o-appearance: none;
+    -o-transition: .2s;
+    -webkit-appearance: none;
+    -webkit-transition: .2s;
+}
 
-.listLayout .list{
-    width: calc(33.3% - 10%/3);
-    margin-left: 5%;
+.slider:hover {
+    opacity: 1;
+}
+
+/*  the dots/bullets/indicators */
+.dotted-slider{
+    top: 150px;
+    position: relative;
+    text-align:center; 
+    /* transform: translate(0%, -700%); */
+    width: 100%;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    background-color: rgb(228,217, 217);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+    width: 10px;
+}
+
+/* color change on hover on dot */
+.active, .dot:hover {
+    background-color: rgb(255, 108, 48);    
+}
+
+/* slider  for sliding ranges in price/rate for travel search */
+.slider {
+    background: #d3d3d3;
+    height: 15px;
+    opacity: 0.7;
+    outline: none;
+    transition: opacity .2s;
+    width: 100%;
+    -moz-appearance: none;
+    -moz-transition: .2s;
+    -o-appearance: none;
+    -o-transition: .2s;
+    -webkit-appearance: none;
+    -webkit-transition: .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+
+/*Price range Design CSS Starts*/
+
+section.range-slider {
     float: left;
-    border-radius: 10px;
-    height: 400px;
+    position: relative;
+    /* text-align: center; */ 
+    width: 100%;
+}
+section.range-slider input[type="range"] {
+    background: rgba(0,0,0,0.05);
+    border: none;
+    border-radius: 14px;
+    height: 20px;
+    left: 0;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: red;
+}
+section.range-slider input[type="range"]::-webkit-slider-thumb {
+    border: none;
+    border-radius: 14px;
+    height: 20px;
+    outline: 0;
+    pointer-events: all;
+    position: relative;
+    width: 20px;
+    -webkit-appearance: none;
+    z-index: 1;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dad8da), color-stop(100%, #413f41));
+    /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top, #dad8da 0, #413f41 100%);
+    /* older mobile safari and android > 2.2 */
+    background-image: linear-gradient(to bottom, #dad8da 0, #413f41 100%);
+    /* W3C */
+}
+section.range-slider input[type="range"]::-moz-range-thumb {
+    border: none;
+    border-radius: 14px;
+    height: 20px;
+    pointer-events: all;
+    position: relative;
+    width: 20px;
+    -moz-appearance: none;
+    z-index: 10;
+    background-image: linear-gradient(to bottom, #dad8da 0, #413f41 100%);
+    /* W3C */
+}
+section.range-slider input[type="range"]::-ms-thumb {
+    border-radius: 14px;
+    border: 0;
+    height: 20px;
+    pointer-events: all;
+    position: relative;
+    -ms-appearance: none;
+    width: 20px;
+    z-index: 10;
+    background-image: linear-gradient(to bottom, #dad8da 0, #413f41 100%);
+    /* W3C */
+}
+section.range-slider input[type=range]::-moz-range-track {
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+    position: relative;
+    z-index: -1;
+}
+section.range-slider input[type=range]:last-of-type::-moz-range-track {
+    background: none transparent;
+    border: 0;
+    -moz-appearance: none;
+}
+section.range-slider input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+/*Price range Design CSS ends*/
+
+
+
+/*  the dots/bullets/indicators */
+.dotted-slider{
+    text-align:center; 
+    transform: translate(0%, -400%);
+    width: 100%;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    background-color: rgb(228,217, 217);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+    width: 10px;
+}
+
+/* color change on hover on dot */
+.active, .dot:hover {
+    background-color: rgb(255, 108, 48);    
+}
+
+
+
+/* popular destination */
+.listLayout .list{
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
+    opacity: 1;
+    height: 400px;
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: calc(33.3% - 10%/3);
 }
-
-.listLayout .list:first-child{
+.listLayout .list:first-child, .listLayout .list:nth-child(6){
     margin-left: 0;
 }
-
 .listLayout .list.big{
     width: 65%;
     margin-left: 0;
+}
+
+.listLayout .list i{
+    border-radius: 30px;
+    background-color: rgb(255, 108, 48);
+    opacity: 0;
+    padding: 10px; 
+    text-align: center;  
+    margin-left: calc(50% - 21px);
+}
+
+.listLayout .list h5{
+    height: 100%;
+    margin-left: 30px;
+    margin-top: 310px;
+    position: absolute;
+}
+
+.listLayout .list:hover i{
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-name: visibility;
+    opacity:1;
+    transform: translateY(300%);
+}
+.listLayout .list:hover .dark{
+    background: linear-gradient(rgba(241, 119, 48, 0.466), rgba(0, 0, 0, 0.3));
+    /* transition: 0.5s ease; */
+}
+
+.banner{
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.banner h2{
+    color:rgb(255, 255, 255);
+    top: 100px;
+    position: relative;
+}
+
+.bannerIcon{
+    color: rgb(255, 255, 255);
+    display: grid;
+    font-size: 60px;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto auto;
+    top: 100px;
+    position: relative;
+    place-content: center;
+}
+
+.sectionBanner h2{
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 100px;
+    width: 40%;
+}
+
+.sectionBanner span{
+    float: right;
+}
+
+.row {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat( auto-fit, 350px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    place-content: center;
+    width: 100%;
+}
+
+.column {
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.column .content {
+    margin: 20px 20px 20px 20px;
+}
+
+.content h3{
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.icon{
+    color: rgb(255, 108, 48);
+    display: grid;
+    font-size: 40px;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+    place-content: center;
+}
+
+.card i{ 
+    border-radius: 20px;
+    background-color: rgb(255, 108, 48);
+    height: 20px;
+    width: 20px; 
+    opacity: 0;
+    padding: 10px;        
+}
+
+.card:hover i{
+    animation-name: visibility;
+    animation-direction: normal;
+    animation-duration: 1s;
+    transform: translateY(200%);
+    opacity:1;
+}
+
+.card h5{
+    text-align: left;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 130px;
+}
+
+#popularDestination .content {
+    text-align: left;
+}
+
+.float-content{
+    width: 100%;
+    margin-top: -2px;
+}
+
+.price {
+    float: left;
+    width: 50%;
+}
+
+.float-content .btn{
+    float: right;
+    width: 25%;
+    margin-top: -40px;
+}
+
+.sectionAbout{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.column.story{
+    display: flex;
+    margin-top: 40px;
+}
+
+.story .picture{
+    background-size: cover;
+    background-position: center;
+    margin: 20px 0 20px 20px;
+    width:570px;
+}
+
+.content.paragraph{
+    width: 570px;
+    margin-top: 0;
+}
+
+.partner{
+    grid-template-columns: repeat( auto-fit, 200px);
+}
+
+.image{
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+    width: 60px;
+    height:60px;
+    place-content: center;
+}
+
+.partner h5{
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    text-align: center;
+    text-shadow: none;
+}
+
+.subscribe{
+    margin: auto auto;
+    height: 100%;
+}
+
+.subscribe .sectionHeader{
+    color: white;
+    display: block;
+    float: left;
+    bottom: 100px;
+    width: 50%;
+    position: relative;
+}
+
+.subscribe label{
+    color:rgb(255, 255, 255);
+    top: 100px;
+    position: relative;
+}
+
+.banner form{
+    float: right;
+    left: 0px;
+    top: 175px;
+    position: relative;
+    width: 40%;
+}
+
+.banner .form-control{
+    width: 300px;
+}
+
+.row.testimonial{
+    margin-top: 50px;
+}
+
+.testimonial .card{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+.testimonial h3{
+    text-align: center;
+}
+
+.testimonial .content{
+    margin: 0 20px;
+}
+
+.testimonial i{
+    color:rgba(0,0,0,0.05);
+}
+
+
+
+.card.blog{
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+#blog .content a{
+     color: rgb(255, 108, 48);
+}
+
+
+@keyframes visibility{
+    0% {
+        transform: translateY(0%); 
+        opacity: 0.3}
+    50% {
+        transform: translateY(150%);
+        opacity: 0.6;}
+    100% {
+        transform: translateY(300%); 
+        opacity: 1;}
 }

@@ -27,7 +27,6 @@ h1, h2, h3{
 h1{
     font-size: 45px;
     font-weight: bold;
-
 }
 
 h2{
@@ -37,6 +36,19 @@ h2{
 
 h3{
     color: rgb(68, 68, 68);
+}
+
+h4{
+    color: rgb(255, 108, 48);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h5{
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    text-shadow: 2px 2px rgba(0,0,0, 0.5);
+    text-transform:capitalize;
 }
 
 p, text, label{
@@ -59,21 +71,18 @@ text{
     font-weight: 500;
 }
 
-.text-white{
-    color: rgb(255, 255, 255);
-}  
-
-.text-center{
-    text-align: center;
-}
-
 a{
     color: rgb(255, 255, 255);
+    display: block;
+    font-size: 16px;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 i{
     color: rgb(255, 255, 255);
+    display: block;
+    /* font-size: 30px; */
 }
 
 section, aside, modal{
@@ -102,32 +111,88 @@ clear: both;
     margin: 0 auto;
 }
 
-.sectionHeader label{
+.dark{
+    background: rgba(0,0,0, 0.3);
+    height: 100%;
+}
+
+.text-white{
+    color: rgb(255, 255, 255);
+}  
+
+.text-center{
     text-align: center;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainHeader{
+    margin: auto;
+    text-align: center;
+}
+
+.sectionHeader{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.subHeader{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.mainHeader label, .sectionHeader label{
     display: block;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.button{
+    margin-left: 50%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
 }
 
 .btn{
-    background: none;
-    border:rgb(0, 0, 255);
+    background: rgb(255, 108, 48);
+    border: rgb(255, 108, 48);
     border-radius: 8px;
     color: rgb(255, 255, 255);
     display: inline-block;
-    padding: 10px 5px;
+    padding: 10px 15px;
 }
 
 .btn:hover{
     background: rgb(194, 66, 16);
 }
 
-.heading h1:after, .heading h2:after {
+/*  ratings */
+.star span{
+    margin-left: 5px;
+    /* color: rgb(0, 0, 0); */
+}
+
+/* ratings checked */
+.checked{
+    color: rgb(255, 238, 0);
+}
+
+
+
+.mainHeader h1:after, .sectionHeader h2:after, .subHeader h3:after {
     display: block;
     content: "";
     height: 3px;
-    width: 100%;
+    width: 6%;
     background-color: rgb(255, 108, 48);
-    position: absolute;
-    bottom: 1px;
-    left: 0;
-    opacity: 0;
+    position: relative;
+    bottom: -12px;
+    margin: 0 auto;
 }
+
