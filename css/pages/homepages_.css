@@ -51,7 +51,7 @@
     user-select: none;
     width: auto;
   }
-  
+
 /* Position the "next button" to the right */
 .next {
     border-radius: 3px 0 0 3px;
@@ -61,7 +61,7 @@
 .prev {
     left: 50px;
 }
-  
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
@@ -69,7 +69,7 @@
 
 
 .searchBar .mainHeader{
-    bottom: 100px;    
+    bottom: 100px;
     position: relative;
 }
 
@@ -88,7 +88,7 @@
 .form-group {
     display: inline-block;
     left: 20px;
-    place-content: center;   
+    place-content: center;
 }
 
 .form-control {
@@ -130,11 +130,11 @@
 .dotted-slider{
     top: 150px;
     position: relative;
-    text-align:center; 
+    text-align:center;
     /* transform: translate(0%, -700%); */
     width: 100%;
 }
-  
+
 /* The dots/bullets/indicators */
 .dot {
     background-color: rgb(228,217, 217);
@@ -149,7 +149,7 @@
 
 /* color change on hover on dot */
 .active, .dot:hover {
-    background-color: rgb(255, 108, 48);    
+    background-color: rgb(255, 108, 48);
 }
 
 /* slider  for sliding ranges in price/rate for travel search */
@@ -178,7 +178,7 @@
 section.range-slider {
     float: left;
     position: relative;
-    /* text-align: center; */ 
+    /* text-align: center; */
     width: 100%;
 }
 section.range-slider input[type="range"] {
@@ -260,11 +260,11 @@ section.range-slider input[type=range]::-moz-focus-outer {
 
 /*  the dots/bullets/indicators */
 .dotted-slider{
-    text-align:center; 
+    text-align:center;
     transform: translate(0%, -400%);
     width: 100%;
 }
-  
+
 /* The dots/bullets/indicators */
 .dot {
     background-color: rgb(228,217, 217);
@@ -279,7 +279,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
 
 /* color change on hover on dot */
 .active, .dot:hover {
-    background-color: rgb(255, 108, 48);    
+    background-color: rgb(255, 108, 48);
 }
 
 
@@ -308,8 +308,8 @@ section.range-slider input[type=range]::-moz-focus-outer {
     border-radius: 30px;
     background-color: rgb(255, 108, 48);
     opacity: 0;
-    padding: 10px; 
-    text-align: center;  
+    padding: 10px;
+    text-align: center;
     margin-left: calc(50% - 21px);
 }
 
@@ -415,13 +415,13 @@ section.range-slider input[type=range]::-moz-focus-outer {
     place-content: center;
 }
 
-.card i{ 
+.card i{
     border-radius: 20px;
     background-color: rgb(255, 108, 48);
     height: 20px;
-    width: 20px; 
+    width: 20px;
     opacity: 0;
-    padding: 10px;        
+    padding: 10px;
 }
 
 .card:hover i{
@@ -570,12 +570,12 @@ section.range-slider input[type=range]::-moz-focus-outer {
 
 @keyframes visibility{
     0% {
-        transform: translateY(0%); 
+        transform: translateY(0%);
         opacity: 0.3}
     50% {
         transform: translateY(150%);
         opacity: 0.6;}
     100% {
-        transform: translateY(300%); 
+        transform: translateY(300%);
         opacity: 1;}
 }
