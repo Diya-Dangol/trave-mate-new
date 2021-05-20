@@ -3,15 +3,12 @@
 }
 
 #mainBanner .slide {
-<<<<<<< HEAD
     background-position: center;
     background-size: cover;
 }
 
 .BannerSlider .slide{
     height: calc(100vh - 100px);
-=======
-    height: 60vh;
     background-position: center;
     background-size: cover;
 
@@ -19,7 +16,6 @@
 
 .slideshow-container .mySlides{
     height: calc(100vh - 50px);
->>>>>>> e236e20a7cf0f0160fd0f496bd54b50ec45710ac
     background-size: cover;
     background-position: center;
 }
@@ -369,7 +365,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
 .row {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat( auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 350px);
     margin-top: 50px;
     margin-bottom: 50px;
     place-content: center;
@@ -413,6 +409,14 @@ section.range-slider input[type=range]::-moz-focus-outer {
     grid-template-columns: auto auto auto auto;
     position: relative;
     place-content: center;
+}
+
+.icon-text{
+    display: block;
+}
+
+.icon i{
+    color: rgb(255, 108, 48);
 }
 
 .card i{ 
